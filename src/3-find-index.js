@@ -1,3 +1,9 @@
 export const findIndex = (array, value) => {
-  return
+  const isInArray = (element) => element === value
+  if (array.includes(value)) {
+    return array.findIndex(isInArray)
+  }
+  else {
+    return -1
+  }
 }
